@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=sqH0u8wN4Rs&t=2251s
+58:02
+
 # frontend
 
 ## Project setup
