@@ -1,13 +1,27 @@
+
+<!--App.vue -> 고정되어있는 페이지 (틀 역할)-->
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <Header></Header>
+    <div id="content" class="content">
+      <router-view></router-view>
+  <!--router-view : router에 연결되어있는 페이지를 올리는 역할-->
+    </div>
+
   </div>
 </template>
 
+<script>
+import Header from "./components/layout/Header";
+
+export default {
+  name: 'App',
+  components:{
+    Header,
+
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
